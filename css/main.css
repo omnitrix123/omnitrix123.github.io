@@ -969,6 +969,7 @@ input[type="button"] {
   -moz-osx-font-smoothing: grayscale;
   background-color: #d3d3d3;
   border: 0.2rem solid #d3d3d3;
+
 }
 
 .btn:hover,
@@ -1065,6 +1066,142 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+
+
+
+/* ===================================================================
+ * # buttons
+ *
+ * ------------------------------------------------------------------- */
+.btn2,
+button2,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  height: 6rem;
+  line-height: 5.6rem;
+  padding: 0 3.2rem;
+  margin: 0 .4rem 1.6rem 0;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d3d3d3;
+  border: 0.2rem solid #d3d3d3;
+  position: fixed;
+  top: 100px ;
+  left: 30%;
+}
+
+.btn2:hover,
+button2:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn2:focus,
+button2:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  outline: 0;
+}
+
+/* button primary
+ * ------------------------------------------------- */
+.btn2.btn--primary,
+button2.btn--primary,
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary,
+input[type="button"].btn--primary {
+  background: #f9861a;
+  border-color: #f9861a;
+  color: #ffffff;
+}
+
+.btn2.btn--primary:hover,
+button2.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+input[type="reset"].btn--primary:hover,
+input[type="button"].btn--primary:hover,
+.btn2.btn--primary:focus,
+button2.btn--primary:focus,
+input[type="submit"].btn--primary:focus,
+input[type="reset"].btn--primary:focus,
+input[type="button"].btn--primary:focus {
+  background: #000000;
+  border-color: #000000;
+}
+
+/* button modifiers
+ * ------------------------------------------------- */
+.btn2.h-full-width,
+button2.h-full-width {
+  width: 100%;
+  margin-right: 0;
+}
+
+.btn--small,
+button2.btn--small {
+  height: 5.6rem !important;
+  line-height: 5.2rem !important;
+}
+
+.btn--medium,
+button2.btn--medium {
+  height: 6.4rem !important;
+  line-height: 6rem !important;
+}
+
+.btn--large,
+button2.btn--large {
+  height: 6.8rem !important;
+  line-height: 6.4rem !important;
+}
+
+.btn--stroke,
+button2.btn--stroke {
+  background: transparent !important;
+  border: 0.2rem solid #000000;
+  color: #000000;
+}
+
+.btn--stroke:hover,
+button2.btn--stroke:hover {
+  background: #000000 !important;
+  border: 0.2rem solid #000000;
+  color: #ffffff;
+}
+
+.btn--pill,
+button2.btn--pill {
+  padding-left: 3.2rem !important;
+  padding-right: 3.2rem !important;
+  border-radius: 1000px !important;
+}
+
+button2::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
 
 
 
@@ -2142,6 +2279,31 @@ input::-moz-focus-inner {
   background-color: #f9861a !important;
   border-color: #f9861a !important;
 }
+
+.home-content__buttons {
+    position: absolute;
+    right: 0;
+    bottom: 25rem;
+    text-align: center;
+}
+
+.home-content__buttons .btn2 {
+    display: block;
+    width: 210px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin: 1.5rem 0 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-content__buttons .btn2:hover, 
+.home-content__buttons .btn2:focus {
+  background-color: #f9861a !important;
+  border-color: #f9861a !important;
+}
+
 
 .home-content__scroll {
     position: absolute;
